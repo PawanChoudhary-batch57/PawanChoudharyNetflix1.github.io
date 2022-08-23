@@ -1,0 +1,577 @@
+
+*{
+  font-family: Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: white;
+  letter-spacing: 0!important;
+}
+body{
+  background-color: #000;
+}
+.cover-img{
+    height: 100%;
+    position: relative;
+    width:100%;
+    height:100%;
+    border-bottom: 8px solid #222;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/327506e9-f0a6-4ae6-8115-97ea4c94268d/IN-en-20220808-popsignuptwoweeks-perspective_alpha_website_small.jpg") no-repeat center center/cover;
+  } 
+  .cover-img::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0,0,0,.5);
+    box-shadow: 120px 100px 250px #000, inset -120px 250px -150px #000;
+
+  }
+
+.nav-bar{
+    
+    height: 80px;
+    width:100%;
+    
+ }
+ .logo{
+    position: relative;
+    top: 50%;
+    float: left;
+    margin-left: 2rem;
+    width: 8rem;
+     height:3rem;
+     z-index: 2;
+ }
+ nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+  }
+ 
+  .nav-links{
+     flex: 1;
+     position: relative;
+     text-align: right;
+     padding-top: 20px;
+     z-index: 2;
+     top: 50%;
+     
+  }
+  .nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     position: relative;
+     
+  }
+  .bi-globe::before {
+    content: "\f3ee";
+}
+#lang-selector{
+   
+    background-color: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    border-radius: 0%;
+    
+}
+
+.dropdown-menu {
+  min-width:10%;/***********size of Items**************/
+  background-color:#aaa;
+  padding: 0 0;
+  cursor:pointer;
+  line-height: 11px;
+  border-radius: 0%;
+
+}
+.dropdown a:hover {
+  background-color: blue !important;
+}
+#en1{
+  padding-right: 35px;
+}
+#hn1{
+  padding-right: 51px;
+}
+#signup{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    margin-left: .7rem;
+    
+}
+.card-body{
+  position: relative;
+  z-index: 2;
+}
+#id1{
+  text-align: center;
+}
+.card-title{
+  position: relative;
+  padding-top: 15%; 
+  color: white; 
+  font-family: Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 3.125rem; 
+  font-weight: bold; 
+  margin: 0 auto;
+  max-width: 640px;
+  z-index: 2;
+  
+
+}
+#subtitle1{
+  font-size: 1.625rem;
+  margin: 1rem auto;
+  max-width: 640px;
+}
+#subtitle2{
+  padding: 0 ;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#InputEmail1{
+  
+  border-radius: 0%;
+  box-shadow: none;
+
+}
+.form-group{
+  display: flex;
+  flex-direction: row;
+  max-width: 640px;
+  margin: 1rem auto;
+  padding-bottom: 2px;
+}
+#myDIV{
+  
+  margin: 0 20%;
+  display: none;
+ 
+  text-align: left;
+  
+  
+}
+.form-group1{
+  padding-bottom: 70px;
+}
+#myDIV1{
+  width:65%;
+  margin: 0 20%;
+  display: none;
+ 
+  text-align: left;
+ 
+}
+.form-control{
+    flex: 1;
+    appearance: none;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+    height: 60px;
+    padding: 20px 11px;
+    
+}
+#get-started{
+  border-radius: 0%;
+  width: fit-content;
+  padding: .5rem 10px;
+  font-size: 1.65rem;
+  background-color: red;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+  color: #fff;
+}
+#get-started:hover{
+  background-color: rgb(241, 41, 41);
+}
+
+
+.animation-card {
+  background: transparent;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+  background-color: #000;
+}
+.animation-card .animation-card-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.animation-card .animation-card-text {
+  margin: -5% 0;
+  flex: 0 1 auto;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+    z-index: 3;
+    text-align: left;
+}
+.animation-card-text {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.animation-card-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+h1 {
+  margin: 0 0 0.4em;
+}
+.animation-card-subtitle{
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+h2{
+  margin: 0.75em 0 0.25em;
+}
+.animation-card .img-container {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  height: 100%;
+  width: 48%;
+}
+
+.animation-card .animation-container {
+  overflow: hidden;
+  position: relative;
+}
+.animation-card .animation-card-img {
+  position: relative;
+  z-index: 2;
+}
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+.animation-card .animation-card-animation {
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.animation-card .animation-card-video {
+  height: 100%;
+  width: 100%;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.animation-card.section-2 .animation-card-container ,.animation-card.section-4 .animation-card-container {
+  flex-flow: row-reverse;
+}
+.animation-card-animation1{
+  padding: 0.5em .75em;
+  align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 50%;
+    margin: 0 auto;
+    min-width: 15em;
+    
+    position: absolute;
+    transform: translateX(-50%);
+    width: 60%;
+    z-index: 2;
+}
+.animation-card-animation1 img{
+  height: 4.5em;
+}
+.img-text{
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+.img-text1{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+}
+.img-text2{
+  font-size: .9em;
+  color: #0071eb;
+  font-weight: 400;
+}
+.img-animation{
+  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif") 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+.animation-card.section-3 .animation-card-animation {
+  height: 100%;
+  left: 50%;
+  max-height: 47%;
+  max-width: 63%;
+  position: absolute;
+  top: 34%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.animation-card.section-2 .animation-card-text ,.animation-card.section-4 .animation-card-text{
+  padding: 0 0 0 3rem;
+
+}
+.faq-card {
+  text-align: center;
+}
+.faq-heading{
+  font-size: 3.35rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.faq-item{
+  background-color: #000;
+}
+.accordion-item{
+  border: 0 !important;
+}
+.accordion-header{
+  margin: 8px 0px ;
+}
+.faq-question {
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2em 0.8em 1em;
+  position: relative;
+  width: 100%;
+  background: #303030;
+  display: block;
+    
+
+}
+.faq-question .faq-btn{
+  text-decoration: none;
+  text-align: left;
+}
+.faq-answer{
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+  background: #303030;
+    display: block;
+    text-align: left;
+    
+  
+}
+.faq-answer p{
+  display: inline-block;
+    padding: 1.2em;
+  font-weight: 400;
+  font-size: 1.625rem;
+
+}
+.link-part{
+  width:80%;
+}
+.info-heading a{
+  text-decoration: none;
+  color: #737373;
+
+}
+.info-heading a:hover{
+  text-decoration: underline;
+  color: #737373;
+
+
+}
+
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+}
+
+.sub-links a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  color: #737373;
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 1450px), only screen and (min-width: 950px) and (max-width: 1449px){
+#faq-list-part{
+    margin: 2em auto;
+    width: 70%;
+}
+}
+
+
+
+@media only screen and (min-width: 1450px), only screen and (min-width: 550px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1449px){
+  .animation-card {
+      padding: 70px 45px;
+  }
+  }
+
+
+
+
+@media only screen and (max-width: 349px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 550px) and (max-width: 949px)
+{
+  
+  
+
+
+.nav-links ul{
+  padding-inline-start: 0px !important;
+}
+.animation-card-container{
+    flex-direction: column;
+}
+.animation-card.section-2 .animation-card-container ,.animation-card.section-4 .animation-card-container {
+  flex-flow: column;
+  
+}
+.animation-card.section-2 .animation-card-text ,.animation-card.section-4 .animation-card-text{
+  padding: 0 0 0 0;
+
+}
+.animation-card .animation-card-text {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.form-group{
+  flex-direction: column;
+}
+#get-started{
+  font-size: 1rem;
+    min-height: 40px;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    line-height: normal;
+    margin: 0.30em auto;
+    padding: 0 1em;
+    width: auto;
+}
+.logo{
+  width: 4rem;
+  height: 2rem;
+  margin-left: .5rem;
+  float: left;
+
+}
+.animation-card .img-container{
+  margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+}
+
+}
+@media only screen and (max-width: 349px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 550px) and (max-width: 600px)
+{
+  .container-fluid{
+    height: fit-content !important;
+    
+  }
+  .animation-card-title {
+    font-size: 1.625rem;
+    
+    
+  }
+  .animation-card-subtitle {
+    font-size: 1.125rem;
+    
+  }
+  .card-title{
+    font-size: 1.75rem;
+  }
+  #subtitle1{
+    font-size: 1.125rem;
+      margin: 1rem auto;
+  }
+  
+
+  .faq-heading{
+    font-size: 1.625rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+  
+  .faq-part{
+    padding:5% 0;
+  }
+  .faq-item {
+
+    list-style-type: none;
+    margin: 0  0;
+}
+
+.faq-question .faq-btn{
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.125rem;
+}
+.faq-question i{
+  font-size: 2rem !important;
+}
+.link-part{
+  width:100%;
+  padding: 0 0!important;
+}
+.sub-links ul {
+  
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 349px)
+{
+  .card-img-overlay{
+    width:349px !important;
+  }
+}
